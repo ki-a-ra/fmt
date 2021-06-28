@@ -44,7 +44,7 @@ namespace fmt {
 
 	template<typename T>
 	concept Display = requires(T t, formatter &fmt) {
-		// NOTE(freya): We force display to return void to avoid users expecting that its return value (for example the
+		// NOTE(kiara): We force display to return void to avoid users expecting that its return value (for example the
 		// amount of written bytes) might be used by the formatting functions.
 		{ t.display(fmt) } -> concepts::same<void>;
 	};
