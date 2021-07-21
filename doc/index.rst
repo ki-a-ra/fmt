@@ -11,4 +11,4 @@ Usage
 
    #include <fmt.hh>
 
-   fmt::print(u8"hello, {}\n", u8"world");
+   fmt::print("hello, %\n", "world");
