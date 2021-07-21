@@ -6,6 +6,10 @@
 #ifndef kiara_fmt_hh_included
 #define kiara_fmt_hh_included
 
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
 #ifdef stdout
 #pragma push_macro("stdout")
 #undef stdout
