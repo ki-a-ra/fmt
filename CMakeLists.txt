@@ -8,4 +8,3 @@ string(APPEND CMAKE_CXX_FLAGS_DEBUG " /DNDEBUG")
 add_library(fmt fmt.cc)
 target_include_directories(fmt PUBLIC include)
 target_compile_options(fmt PRIVATE "/EHsc" "/GR-" "/utf-8")
-
